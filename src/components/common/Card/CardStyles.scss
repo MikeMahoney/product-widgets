@@ -1,0 +1,10 @@
+@use '../../../_colors.scss' as *;
+
+.card {
+  border-radius: 8px;
+  background-color: $color-white;
+  padding: 36px;
+  -webkit-box-shadow: 0px 6px 35px -1px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0px 6px 35px -1px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 6px 35px -1px rgba(0, 0, 0, 0.35);
+}

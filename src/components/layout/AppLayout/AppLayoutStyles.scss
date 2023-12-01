@@ -1,0 +1,13 @@
+@use '../../../_colors.scss' as *;
+
+.app-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    flex: 1;
+  }
+}

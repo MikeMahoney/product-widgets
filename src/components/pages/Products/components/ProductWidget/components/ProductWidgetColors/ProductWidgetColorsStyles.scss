@@ -1,0 +1,34 @@
+@use '../../../../../../../_colors.scss' as *;
+
+.product-widget-colors {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  &__color {
+    height: 16px;
+    width: 16px;
+    &--blue {
+      background-color: $color-blue;
+    }
+    &--green {
+      background-color: $color-green;
+    }
+    &--beige {
+      background-color: $color-beige;
+    }
+    &--white {
+      background-color: white;
+    }
+    &--black {
+      background-color: black;
+    }
+    &--selected {
+      border: 2px solid $color-light-grey;
+      height: 12px;
+      width: 12px;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

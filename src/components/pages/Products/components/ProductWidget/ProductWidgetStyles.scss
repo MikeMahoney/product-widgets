@@ -1,0 +1,105 @@
+@use '../../../../../_colors.scss' as *;
+
+.product-widget {
+  display: flex;
+  flex-direction: column;
+  height: 167px;
+  width: 221px;
+  &__header {
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    height: 66px;
+    &--blue {
+      background-color: $color-blue;
+      color: white;
+    }
+    &--green {
+      background-color: $color-green;
+      color: white;
+    }
+    &--beige {
+      background-color: $color-beige;
+      color: $color-green;
+      .product-widget__header__icon {
+        path {
+          fill: $color-green;
+        }
+      }
+    }
+    &--white {
+      background-color: white;
+      color: $color-green;
+      .product-widget__header__icon {
+        path {
+          fill: $color-green;
+        }
+      }
+    }
+    &--black {
+      background-color: black;
+      color: white;
+    }
+    &__icon {
+      margin: 0 11px;
+    }
+    &__title {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      span:first-child {
+        font-size: 12px;
+        font-weight: 400;
+      }
+      span:last-child {
+        font-size: 18px;
+        font-weight: 700;
+      }
+    }
+  }
+  &__options {
+    color: $color-green;
+    font-size: 14px;
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 10px 0;
+      li {
+        display: flex;
+        justify-content: space-between;
+        height: 28px;
+        line-height: 28px;
+      }
+    }
+    &__icon {
+      margin: 2px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    &__tooltip-wrapper {
+      position: relative;
+    }
+  }
+  &__tooltip {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 265px;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    &__link {
+      color: $color-green;
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+      margin-top: 10px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}

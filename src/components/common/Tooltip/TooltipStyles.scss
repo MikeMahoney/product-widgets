@@ -1,0 +1,14 @@
+@use '../../../_animations.scss' as *;
+
+.tooltip {
+  position: absolute;
+  top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+  -webkit-box-shadow: 0px 6px 35px -1px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0px 6px 35px -1px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 6px 35px -1px rgba(0, 0, 0, 0.35);
+  animation: fadeIn 300ms;
+}

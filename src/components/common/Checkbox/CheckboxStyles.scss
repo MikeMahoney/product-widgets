@@ -1,0 +1,25 @@
+@use '../../../_colors.scss' as *;
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 24px;
+  &__inner {
+    border: 2px solid black;
+    border-radius: 2px;
+    height: 14px;
+    width: 14px;
+    &--selected {
+      border: 2px solid $color-green;
+      background-color: $color-green;
+    }
+  }
+  &:hover {
+    cursor: pointer;
+    background-color: $color-light-green;
+    opacity: 50%;
+  }
+}
